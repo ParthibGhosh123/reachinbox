@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "worker": "tsx src/queue/worker.ts",
+    "build": "tsc",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@bull-board/api": "^9.14.0",
+    "@bull-board/express": "^9.14.0",
+    "@elastic/elasticsearch": "^9.5.1",
+    "bullmq": "^6.7.10",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "drizzle-orm": "^0.45.4",
+    "express": "^5.3.0",
+    "ioredis": "^6.1.0",
+    "mysql2": "^3.24.6",
+    "nodemailer": "^10.6.1",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "^0.31.11",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
